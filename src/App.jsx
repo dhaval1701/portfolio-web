@@ -5,11 +5,8 @@ import "./App.css";
 import Portfolio from "./main/index.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      test
       <Portfolio />
     </>
   );

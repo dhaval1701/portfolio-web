@@ -68,7 +68,7 @@ const Portfolio = () => {
   const downloadResume = () => {
     // Create a download link for the resume
     const link = document.createElement("a");
-    link.href = "#"; // You would replace this with actual resume file path
+    link.href = "Dhaval_Panchal_2024.pdf"; // You would replace this with actual resume file path
     link.download = "Dhaval_Panchal_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -321,9 +321,9 @@ const Portfolio = () => {
               Frontend Developer
             </p>
             <p className="text-lg text-stone-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Junior Frontend Developer with hands-on experience in React,
-              building responsive and dynamic web applications with modern
-              JavaScript frameworks
+              Frontend Developer with hands-on experience in React, building
+              responsive and dynamic web applications with modern JavaScript
+              frameworks
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
@@ -523,13 +523,13 @@ const Portfolio = () => {
                         <Github size={18} />
                         Code
                       </a>
-                      <a
+                      {/* <a
                         href={project.live}
                         className="flex items-center gap-2 text-stone-600 hover:text-stone-900 transition-colors font-medium"
                       >
                         <ExternalLink size={18} />
                         Live Demo
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -670,8 +670,8 @@ const Portfolio = () => {
             </div>
             <div className="border-t border-stone-700 pt-8 mt-8">
               <p className="text-stone-500 text-sm">
-                © 2024 Dhaval Panchal. Crafted with React and passion in
-                Ahmedabad, India.
+                © {new Date().getFullYear()} Dhaval Panchal. Crafted with React
+                and passion in Ahmedabad, India.
               </p>
             </div>
           </div>
